@@ -54,20 +54,21 @@ class App extends React.Component {
   return (
     <div className="App">
       <div className="conatiner">
-      <h1>To Do List</h1>
-      <br/>
-      <input 
-      type="text" 
-      placeholder="Type item here..." 
-      vale={this.state.newItem}
-      onChange={event => this.updateInput("newItem", event.target.value)}
-      />
-      <button onClick={() => this.addItem()}>
-      Add
-      </button>
-      <br/>
-      <ul>
-        {this.state.list.map(item => {
+        <div className="main">
+          <h1>To Do List</h1>
+          <br/>
+          <input 
+          type="text" 
+          placeholder="Type item here..." 
+          vale={this.state.newItem}
+          onChange={event => this.updateInput("newItem", event.target.value)}
+          />
+          <button onClick={() => this.addItem()}>
+          Add
+          </button>
+          <br/>
+          <ul>
+          {this.state.list.map(item => {
           return(
             <li key={item.id}>
             {item.value}
@@ -77,8 +78,9 @@ class App extends React.Component {
 
             </li>
           )
-        })}
+          })}
       </ul>
+      </div>
       </div>
 
     </div>

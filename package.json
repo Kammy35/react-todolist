@@ -2,7 +2,7 @@
   "name": "react-todolist",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Kammy35/react-todolist.git",
+  "homepage": "https://kammy35.github.io/react-todolist/",
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -12,9 +12,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject","predeploy": "SKIP_PREFLIGHT_CHECK=true  npm run build",
+    "eject": "react-scripts eject",
+    "predeploy": "SKIP_PREFLIGHT_CHECK=true  npm run build",
     "deploy": "SKIP_PREFLIGHT_CHECK=true  gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": "react-app"
