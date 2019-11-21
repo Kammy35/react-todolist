@@ -14,6 +14,9 @@
   
 }
 
-.main{
-  
+.btn{
+  display: inline-block;
+  background-color: blue;
+  color: aliceblue;
+  padding: 10px 25px;
 }

@@ -72,7 +72,7 @@ class App extends React.Component {
           return(
             <li key={item.id}>
             {item.value}
-            <button onClick={() => this.deleteItem(item.id)}>
+            <button className="btn" onClick={() => this.deleteItem(item.id)}>
               X
             </button>
 
